@@ -36,6 +36,7 @@ p{
     font-size: 16px;
     color: #465b52;
     margin: 15px 0 20px 0;
+    line-height: 150%;
 }
 
 .section-p1{
@@ -140,7 +141,7 @@ button.white{
 
 /* home page */
 #hero{
-    background-image: url("../img/hero4.png");
+    background-image: url("../img/hero.png");
     height: 90vh;
     width: 100%;
     background-position: top 25% right 0%;
@@ -181,13 +182,14 @@ button.white{
     padding: 25px 15px;
     text-align: center;
     box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
-border: 1px solid #cce7d0;
-border-radius: 4px;
-margin: 15px 0;
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+    transition: all 0.3s ease-in-out;
 }
 
 #feature .fe-box:hover{
-    box-shadow: 10px 10px 54px rgba(70, 62, 121, 0.3);
+    box-shadow: 10px 10px 54px rgba(70, 62, 121, 0.17);
 }
 #feature .fe-box img{
     width: 100%;
@@ -378,7 +380,7 @@ background-color: #fff2e5;
     padding-bottom: 15px;
 }
 
-#sm-banner .banner-box:hover button{
+#sm-banner .banner-box button:hover {
     background-color: #088178;
     border: 2px solid #088178;
 }
@@ -731,6 +733,7 @@ footer .follow i:hover, footer a:hover{
 #about-head img{ 
     width: 50%;
     height: auto;
+    transform: rotateY(180deg);
 }
 
 #about-head div{
@@ -846,11 +849,13 @@ footer .follow i:hover, footer a:hover{
     align-items: flex-start;
 }
 
-#form-details .people div img{
-    width: 65px;
-    height: 65px;
+#form-details .people div img {
+    width: 80px;
+    height: 80px;
+    object-position: center;
     object-fit: cover;
     margin-right: 15px;
+    border-radius: 50%;
 }
 
 #form-details .people div p{
